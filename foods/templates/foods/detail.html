@@ -1,0 +1,8 @@
+{% extends "./base.html" %} {% load static %} {% block food-container %}
+<h2>{{ name }} .....</h2>
+<div>{{ description }}</div>
+<p>{{ price}}원</p>
+<img src={% get_static_prefix %}{{ image_path }} alt="{{ name }} 이미지" />
+<a href="/foods">back</a>
+{% endblock food-container %}
+</div>
